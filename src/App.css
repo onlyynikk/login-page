@@ -1,38 +1,110 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800&display=swap');
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.nav-bar-btn {
+  margin-right: 40px;
+}
+
+.highlighter {
+  font-weight: bolder;
+  color: #59e4a7;
+}
+
+.btn {
+  margin: 8px;
+  width: 150px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 100vh;
+}
+
+.form-check {
+  display: flex;
+  align-items: flex-start;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-check-label {
+  color: #868889;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container {
+  width: 100vw;
+  padding: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-color2 {
+  background-color: #1b2e35;
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-color2:focus,
+.btn-color2:hover {
+  color: white;
+
+  background-color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-color1:focus,
+.btn-color1:hover {
+  background-color: #85e8bd;
+}
+
+.form-label {
+  font-size: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: bolder;
+}
+
+.btn-color1 {
+  background-color: #59e4a7;
+  color: black;
+}
+
+.btn-submit {
+  width: 100%;
+  font-weight: bolder;
+
+  border: none;
+  padding: 8px;
+}
+
+.form-control {
+  padding: 8px;
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 680px) {
+  .image {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .btn-color1 {
+    display: none;
   }
 }
